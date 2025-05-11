@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sheryoo0 Portfolio</title>
+
+    <!--- favicon-->
+    <link rel="icon" href="/assets/images/avatar-1.png" type="image/png" />
+    <!--- custom css link-->
+    <link rel="stylesheet" href="/assets/css/style.css" />
+
+    <!--- google font link-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!--- #MAIN-->
+    <main>
+      <!--- #SIDEBAR-->
+      <aside class="sidebar" data-sidebar>
+        <div class="sidebar-info">
+          <figure class="avatar-box">
+            <img
+              src="/assets/images/1.jpeg"
+              alt="Sherif Shaaban"
+              width="80"
+              class="avatar-img"
+            />
+          </figure>
+          <div class="info-content">
+            <h1 class="name" title="Sherif Shaaban">Sherif Shaaban</h1>
+            <p class="title">Software Developer</p>
+          </div>
+          <!-- btn - small screens  -->
+          <button class="info_more-btn" data-sidebar-btn>
+            <span>Show Contacts</span>
+            <ion-icon name="chevron-down"></ion-icon>
+          </button>
+        </div>
+        <div class="sidebar-info_more">
+          <div class="separator"></div>
+          <ul class="contacts-list">
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="mail-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Email</p>
+                <a
+                  id="mail"
+                  href="mailto:sherifzayan5@gmail.com"
+                  class="contact-link"
+                  >sherifzayan5@gmail.com</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="phone-portrait-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Phone</p>
+                <a href="tel:+201012075812" class="contact-link"
+                  >+20 101-207-5812</a
+                >
+              </div>
+            </li>
+            <li class="contact-item">
+              <div class="icon-box">
+                <ion-icon name="location-outline"></ion-icon>
+              </div>
+              <div class="contact-info">
+                <p class="contact-title">Location</p>
+                <address>Dessouk, Egypt</address>
+              </div>
+            </li>
+          </ul>
+          <ul class="social-list">
+            <li class="social-item">
+              <a
+                href="https://www.linkedin.com/in/sherif-shaaban-377217224/"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-linkedin"></ion-icon>
+              </a>
+            </li>
+            <li class="social-item">
+              <a
+                href="https://github.com/Sheryoo"
+                class="social-link"
+                target="_blank"
+              >
+                <ion-icon name="logo-github"></ion-icon>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </aside>
+      <!--- #main-content-->
+      <div class="main-content">
+        <!--- #NAVBAR-->
+        <nav class="navbar">
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <button class="navbar-link active" data-nav-link>About</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Resume</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Portfolio</button>
+            </li>
+            <li class="navbar-item">
+              <button class="navbar-link" data-nav-link>Contact</button>
+            </li>
+          </ul>
+        </nav>
+
+        <!--- ABOUT-->
+        <article class="about active" data-page="about">
+          <header>
+            <h2 class="h2 article-title">About me</h2>
+          </header>
+          <section class="about-text">
+            <p>
+              I am a software developer with a passion for innovation and
+              collaboration. I am skilled in a variety of programming languages
+              and technologies, including Python, Django, Node.js, and React. I
+              have experience in building and maintaining back-end web
+              applications, as well as developing APIs. With expertise in
+              Laravel and PHP, I bring a comprehensive approach to full-stack
+              development. My experience includes working with modern frameworks
+              and tools, with a particular focus on creating robust and scalable
+              backend solutions.
+            </p>
+          </section>
+          <!--- service -->
+          <section class="service">
+            <h3 class="h3 service-title">What i'm doing</h3>
+            <ul class="service-list">
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-dev.svg"
+                    alt="Backend development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Backend Development</h4>
+                  <p class="service-item-text">
+                    Building robust and scalable backend applications using
+                    Node.js, Python, and Laravel.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-app.svg"
+                    alt="API development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">API Development</h4>
+                  <p class="service-item-text">
+                    Creating RESTful APIs and integrating them with frontend
+                    applications.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-design.svg"
+                    alt="Full-stack development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">Full-Stack Development</h4>
+                  <p class="service-item-text">
+                    Developing complete web applications using modern frameworks
+                    and technologies.
+                  </p>
+                </div>
+              </li>
+              <li class="service-item">
+                <div class="service-icon-box">
+                  <img
+                    src="./assets/images/icon-photo.svg"
+                    alt="CMS development icon"
+                    width="40"
+                  />
+                </div>
+                <div class="service-content-box">
+                  <h4 class="h4 service-item-title">CMS Development</h4>
+                  <p class="service-item-text">
+                    Building and customizing content management systems using
+                    Strapi and other modern tools.
+                  </p>
+                </div>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!-- - #RESUME-->
+        <article class="resume" data-page="resume">
+          <header>
+            <h2 class="h2 article-title">Resume</h2>
+          </header>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Work Experience</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">
+                  Backend Developer at
+                  <a
+                    href="https://swiss-devs.com/"
+                    target="_blank"
+                    class="timeline-item-title-link"
+                    >Swiss-Devs</a
+                  >
+                </h4>
+                <span>2 years</span>
+                <p class="timeline-text">
+                  - Participated in multiple projects using Node.js<br />
+                  - Developed and maintained backend services<br />
+                  - Collaborated with cross-functional teams<br />
+                  - Implemented best practices for code quality and performance
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section class="timeline">
+            <div class="title-wrapper">
+              <div class="icon-box">
+                <ion-icon name="book-outline"></ion-icon>
+              </div>
+              <h3 class="h3">Projects</h3>
+            </div>
+            <ol class="timeline-list">
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Agri-tech360</h4>
+                <p class="timeline-text">
+                  - AI-powered plant disease classification application<br />
+                  - Integrated AI chatbot for user assistance<br />
+                  - Built with modern web technologies
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Auto Mechanic Advisor</h4>
+                <p class="timeline-text">
+                  - LinkedIn-like platform for mechanics<br />
+                  - Location-based mechanic finder<br />
+                  - Rating and review system<br />
+                  - AI chatbot integration
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">E-commerce RESTful API</h4>
+                <p class="timeline-text">
+                  - Scalable Node.js backend<br />
+                  - RESTful architecture<br />
+                  - Secure payment integration<br />
+                  - Comprehensive documentation
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">URL Shortener</h4>
+                <p class="timeline-text">
+                  - Efficient URL shortening service<br />
+                  - Analytics tracking<br />
+                  - Custom short URL generation
+                </p>
+              </li>
+              <li class="timeline-item">
+                <h4 class="h4 timeline-item-title">Strapi Projects</h4>
+                <p class="timeline-text">
+                  - Multiple CMS implementations<br />
+                  - Custom plugin development<br />
+                  - API integration and customization
+                </p>
+              </li>
+            </ol>
+          </section>
+          <section class="skill">
+            <h3 class="h3 skills-title">My skills</h3>
+            <div class="skills-list content-card">
+              <h4>Technical:</h4>
+              <p>
+                Node.js, Python, Django, React, Laravel, PHP, RESTful APIs,
+                Strapi, Git, Docker, Database Design, API Development, Backend
+                Architecture
+              </p>
+            </div>
+            <div class="skills-list content-card">
+              <h4>Personal:</h4>
+              <p>
+                Problem Solving, Team Collaboration, Project Management,
+                Technical Documentation, Code Review, Agile Methodologies
+              </p>
+            </div>
+          </section>
+        </article>
+
+        <!--- #PORTFOLIO-->
+        <article class="portfolio" data-page="portfolio">
+          <header>
+            <h2 class="h2 article-title">Portfolio</h2>
+          </header>
+          <section class="projects">
+            <ul class="project-list">
+              <li class="project-item active">
+                <a href="#" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="/assets/images/project-10.png"
+                      alt="Agri-tech360"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Agri-tech360</h3>
+                  <p class="project-category">AI Application</p>
+                </a>
+              </li>
+              <li class="project-item active">
+                <a href="#" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="/assets/images/project-9.png"
+                      alt="Auto Mechanic Advisor"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Auto Mechanic Advisor</h3>
+                  <p class="project-category">Web Platform</p>
+                </a>
+              </li>
+              <li class="project-item active">
+                <a href="#" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="/assets/images/project-7.png"
+                      alt="E-commerce API"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">E-commerce API</h3>
+                  <p class="project-category">Backend Development</p>
+                </a>
+              </li>
+              <li class="project-item active">
+                <a href="#" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-4.png"
+                      alt="URL Shortener"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">URL Shortener</h3>
+                  <p class="project-category">Web Service</p>
+                </a>
+              </li>
+              <li class="project-item active">
+                <a href="#" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/strapi.png"
+                      alt="Strapi Projects"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">Strapi Projects</h3>
+                  <p class="project-category">CMS Development</p>
+                </a>
+              </li>
+              <li class="project-item active">
+                <a href="https://github.com/Sheryoo" target="_blank">
+                  <figure class="project-img">
+                    <div class="project-item-icon-box">
+                      <ion-icon name="eye-outline"></ion-icon>
+                    </div>
+                    <img
+                      src="./assets/images/project-5.png"
+                      alt="Strapi Projects"
+                      loading="lazy"
+                    />
+                  </figure>
+                  <h3 class="project-title">and more...</h3>
+                  <p class="project-category">check my github</p>
+                </a>
+              </li>
+            </ul>
+          </section>
+        </article>
+
+        <!--- #CONTACT-->
+        <article class="contact" data-page="contact">
+          <header>
+            <h2 class="h2 article-title">Contact</h2>
+          </header>
+          <section class="contact-form">
+            <h3 class="h3 form-title">Contact Form</h3>
+            <form id="contact-form" class="form" data-form>
+              <div class="input-wrapper">
+                <input
+                  type="text"
+                  name="user_name"
+                  class="form-input"
+                  placeholder="Full name"
+                  required
+                  data-form-input
+                />
+                <input
+                  type="email"
+                  name="user_email"
+                  class="form-input"
+                  placeholder="Email address"
+                  required
+                  data-form-input
+                />
+              </div>
+              <textarea
+                name="message"
+                class="form-input"
+                placeholder="Your Message"
+                required
+                data-form-input
+              ></textarea>
+              <button class="form-btn" type="submit" data-form-btn>
+                <ion-icon name="paper-plane"></ion-icon>
+                <span>Send Message</span>
+              </button>
+            </form>
+          </section>
+        </article>
+      </div>
+    </main>
+    <!---  js link-->
+    <script src="./assets/js/script.js"></script>
+
+    <!--- ionicon link-->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <!--- EmailJS -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("9fOlT40OnA20XITQt");
+      })();
+    </script>
+    <script src="./assets/js/contact.js"></script>
+  </body>
+</html>
